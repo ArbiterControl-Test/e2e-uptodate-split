@@ -1,0 +1,11 @@
+# Synthetic fixture for the Arbiter live suite (D · ARB-495 U4). It always passes.
+name: e2e-ok
+on:
+  pull_request:
+    branches: [main]
+permissions: {}
+jobs:
+  e2e-ok:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "synthetic check (D · ARB-495 U4)"
